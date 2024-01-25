@@ -1,0 +1,18 @@
+<!-- 
+  Aqui el app component sera intermediario entre toolbar y product-list
+  Recordemos que a toolbar hay que pasarle los productos seleccionados
+  pero solo se puede hacer en orden descendente
+
+  Pista: El producto seleccionado pasara de producto 
+  a product-list y este lo transmitira a app-component quien los ira pusheando,
+  y se lo transmitira a toolbar
+ -->
+
+
+ <!-- En el div contenedor inyectaremos la clase que tenemos en el app.component.css
+en base al booleano que recibimos de toolbar.
+  -->
+<div>
+  <app-toolbar ></app-toolbar>
+  <app-product-list></app-product-list>
+</div>
